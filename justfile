@@ -2,6 +2,10 @@
 list:
     @just --list
 
+# Run the project without any defaults
+make:  
+    cookiecutter . 
+
 # Generate project using defaults
 bake BAKE_OPTIONS="--no-input":  
     cookiecutter {{BAKE_OPTIONS}} . --overwrite-if-exists

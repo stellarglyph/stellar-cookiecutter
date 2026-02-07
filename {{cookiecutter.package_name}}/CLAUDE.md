@@ -22,46 +22,8 @@ uv sync
 ## Dependencies
 
 ## Project Structure
-
+The project structure is displayed below
 ```
-.
-├── {{cookiecutter.package_name}}
-│   ├── assets
-│   │   └── ascii-art-text.png
-│   ├── CLAUDE.md
-│   ├── docs
-│   │   ├── logs.md
-│   │   └── roadmap.md
-│   ├── justfile
-│   ├── pyproject.toml
-│   ├── README.md
-│   ├── src
-│   │   └── {{cookiecutter.project_slug}}
-│   │       ├── __init__.py
-│   │       ├── __main__.py
-│   │       ├── {{cookiecutter.project_slug}}.py
-│   │       ├── cli.py
-│   │       └── utils.py
-│   └── tests
-│       ├── __init__.py
-│       └── test_{{cookiecutter.project_slug}}.py
-├── CLAUDE.md
-├── cookiecutter.json
-├── docs
-│   └── ascii-stellar-cookiecutter.png
-├── hooks
-│   ├── post_gen_project.py
-│   └── pre_gen_project.py
-├── justfile
-├── pyproject.toml
-├── README.md
-├── run.py
-├── tests
-│   └── test_bake_project.py
-└── uv.lock
-
-10 directories, 25 files
-
 
 ```
 

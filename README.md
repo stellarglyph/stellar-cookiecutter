@@ -38,6 +38,7 @@ cookiecutter https://github.com/sprckt/stellar-cookiecutter
 
 ```bash
 just list          # Show available commands
+just make          # Generate project without defaults
 just bake          # Generate project with defaults
 just clean         # Remove generated project
 just watch         # Watch template and auto-regenerate
