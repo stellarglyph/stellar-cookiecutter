@@ -9,5 +9,6 @@
   "project_command_line_alias": "{{ cookiecutter.package_name.replace('stellar-', '') }}",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "first_version": "0.1.0",
+  "is_data_platform": ["no", "yes"],
   "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
 }

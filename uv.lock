@@ -781,7 +781,7 @@ wheels = [
 [[package]]
 name = "stellar-cookiecutter"
 version = "0.2.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "alabaster" },
     { name = "cookiecutter" },
