@@ -1,30 +1,48 @@
 ![Stellar CookieCutter](docs/ascii-stellar-cookiecutter.png)
 
-# Stellar Cookiecutter Project
-This is a template cookiecutter project that's been forked from the original
-[repo](https://github.com/audreyfeldroy/cookiecutter-pypackage.git). This is useful for my needs and utilises modern
-Python tooling in 2025. 
+# Stellar Cookiecutter
+
+A modern Python package template using current tooling. Forked from [cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage.git).
 
 ## Features
 
-*   uv, ruff and ty for tooling
-*   Testing setup with pytest
-*   GitHub Actions testing: Setup to easily test for Python 3.10, 3.11, 3.12, and 3.13
-*   Command line interface using Typer
-*   Pre-commit hooks
+- **uv** for dependency management
+- **ruff** and **ty** for linting and type checking
+- **pytest** for testing
+- **Typer** CLI out of the box
+- **GitHub Actions** CI for Python 3.10–3.13
+- **Pre-commit hooks** configured
+- Optional **data platform** scaffolding (pipelines, orchestration, transformation, visualisation)
 
 ## Quickstart
 
-Install the latest Cookiecutter if you haven't installed it yet:
-
 ```bash
+# Install cookiecutter
 brew install cookiecutter
-```
 
-Generate a Python package project:
-
-```bash
+# Generate a project
 cookiecutter https://github.com/sprckt/stellar-cookiecutter
 ```
 
-And voila you have a modern Python project with all the trimmings.
+## Template Variables
+
+| Variable | Default | Description |
+|---|---|---|
+| `package_name` | `stellar-boilerplate` | Package directory name (with hyphens) |
+| `project_name` | `Python Boilerplate` | Human-readable project name |
+| `project_slug` | auto-derived | Python module name (underscores) |
+| `project_command_line_alias` | auto-derived | CLI command (strips `stellar-` prefix) |
+| `is_data_platform` | `no` | Add data platform folders (`pipelines/`, `orchestration/`, `transformation/`, `visualisation/`) |
+
+## Development
+
+```bash
+just list          # Show available commands
+just make          # Generate project without defaults
+just bake          # Generate project with defaults
+just clean         # Remove generated project
+just watch         # Watch template and auto-regenerate
+
+uv run pytest      # Run tests
+uv run ruff check  # Lint
+```

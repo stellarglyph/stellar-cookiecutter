@@ -1,13 +1,18 @@
 {
-  "full_name": "Eric Thanenthiran",
-  "email": "eric@stellarglyph.io",
-  "github_username": "sprckt",
-  "package_name": "stellar-boilerplate",
-  "project_name": "Python Boilerplate",
+  "full_name": "First Name",
+  "email": "name@somewhere.com",
+  "github_username": "@",
+  "package_name": "Package Name",
+  "project_name": "Python Project Name",
   "project_slug": "{{ cookiecutter.package_name.replace('-', '_') }}",
-  "project_short_description": "A Modern and slim Python Boilerplate.",
+  "project_short_description": "A Modern and slim Python Project.",
   "project_command_line_alias": "{{ cookiecutter.package_name.replace('stellar-', '') }}",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "first_version": "0.1.0",
-  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+  "is_data_platform": ["no", "yes"],
+  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+  "__prompts__": {
+    "is_data_platform": "Do you want to set this up for a data platform project?",
+    "project_command_line_alias": "What command line alias would you like to use?"
+  }
 }
