@@ -10,5 +10,9 @@
   "pypi_username": "{{ cookiecutter.github_username }}",
   "first_version": "0.1.0",
   "is_data_platform": ["no", "yes"],
-  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+  "__prompts__": {
+    "is_data_platform": "Do you want to set this up for a data platform project?",
+    "project_command_line_alias": "What command line alias would you like to use?"
+  }
 }
