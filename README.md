@@ -21,7 +21,7 @@ A modern Python package template using current tooling. Forked from [cookiecutte
 brew install cookiecutter
 
 # Generate a project
-cookiecutter https://github.com/sprckt/stellar-cookiecutter
+cookiecutter https://github.com/stellarglyph/stellar-cookiecutter
 ```
 
 ## Template Variables
