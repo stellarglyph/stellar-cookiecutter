@@ -1,7 +1,7 @@
 {
   "full_name": "First Name",
   "email": "name@somewhere.com",
-  "github_username": "@",
+  "github_username": "@name",
   "package_name": "Package Name",
   "project_name": "Python Project Name",
   "project_slug": "{{ cookiecutter.package_name.replace('-', '_') }}",
