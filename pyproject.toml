@@ -33,7 +33,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.urls]
-homepage = ""
+homepage = "https://github.com/stellarglyph/stellar-cookiecutter"
+
+[tool.uv]
+package = false
 
 [tool.ruff]
 exclude = [
